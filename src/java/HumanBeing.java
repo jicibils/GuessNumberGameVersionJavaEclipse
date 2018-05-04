@@ -4,10 +4,10 @@ public class HumanBeing{
 
 
   public int guess(){
-    //FALTA HACER LOS CONTROLES NECESARIOS PARA QUE NO HAYA ERRORES EN TIEMPO DE EJECUCION
     int numberRandom;
     int response = 0;
     System.out.println();
+    //a random number is generated
     numberRandom = (int) (Math.random() * 100) + 1;
     do {
       System.out.println();
