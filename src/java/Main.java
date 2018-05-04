@@ -1,4 +1,4 @@
-import java.util.Scanner; //el prog utiliza la clase Scanner
+import java.util.Scanner;
 
 public class Main{
   private static HumanBeing humanBeing = new HumanBeing();
