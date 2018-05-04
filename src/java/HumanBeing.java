@@ -9,7 +9,6 @@ public class HumanBeing{
     int response = 0;
     System.out.println();
     numberRandom = (int) (Math.random() * 100) + 1;
-    System.out.println(numberRandom);
     do {
       System.out.println();
       System.out.print("Choose a number from 1 to 100: ");
