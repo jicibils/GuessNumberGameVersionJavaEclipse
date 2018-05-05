@@ -14,6 +14,7 @@ public class Computer{
     System.out.println();
     System.out.println("Well, now you must choose a number from 1 to 100, so I guess. ");
     System.out.println("Take it easy!! I promise you that I will see nothing..");
+    System.out.println("One more thing, tell me '+' if your number is bigger, '-' if it is smaller and '=' if it is equal.");
     System.out.print("Come on, Let it go... choose a number, and remember, from 1 to 100: ");
     input = new Scanner(System.in);
     int numberChooseForMe = input.nextInt();

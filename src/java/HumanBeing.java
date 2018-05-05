@@ -9,11 +9,9 @@ public class HumanBeing{
     System.out.println();
     //a random number is generated
     numberRandom = (int) (Math.random() * 100) + 1;
+
     do {
-      System.out.println();
-      System.out.print("Choose a number from 1 to 100: ");
-      Scanner input = new Scanner(System.in);
-      response = input.nextInt();
+      response = askNumber();
       if (numberRandom > response  ) {
         System.out.println();
         System.out.println("My number is bigger..");
@@ -36,5 +34,26 @@ public class HumanBeing{
 
 
     return 0;
+  }
+
+  private int askNumber(){
+    int response = 0;
+    try {
+      do {
+        System.out.println();
+        System.out.print("Choose a number from 1 to 100: ");
+        Scanner input = new Scanner(System.in);
+        response = input.nextInt();
+        if (!((response > 0)&&(response<=100))) {
+          System.out.print("Invalid Input");
+          //return a error code for testing
+        }
+      } while (!((response > 0)&&(response<=100)));
+    }catch (Exception e) {
+      System.out.print("Invalid Input, Only numbers from 1 to 100");
+      //return a error code for testing
+      askNumber();
+    }
+    return response;
   }
 }
